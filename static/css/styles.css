@@ -1,0 +1,110 @@
+
+body {
+  background-color: #66BB6A; /* Green background color */
+  color: #FFFFFF;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content_h {
+  background-color: #66BB6A; /* Green background color */
+  color: #FFFFFF; /* White text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13vh;
+  text-align: center;
+  margin-bottom:0;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  margin-top: 20px; /* Adjust margin as desired */
+}
+.content_p {
+  margin-top:0;
+  background-color: #66BB6A; /* Green background color */
+  color: #000000; /* White text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  text-align: center;
+}
+.form-container {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  padding: 20px;
+  color: #000000;
+  margin-top: 20px; /* Adjust margin as desired */
+}
+
+form {
+  margin-top: 20px; /* Adjust margin as desired */
+}
+
+input[type="file"] {
+  margin-bottom: 10px; /* Adjust margin as desired */
+}
+
+img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  margin-top: 20px; /* Adjust margin as desired */
+}
+
+h2 {
+  margin-top: 20px; /* Adjust margin as desired */
+}
+
+p {
+  margin-bottom: 20px; /* Adjust margin as desired */
+}
+
+h1 {
+  margin-top: 40px; /* Adjust margin as desired */
+}
+.dark-footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+}
+
+

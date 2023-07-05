@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Spotify Reccomendation{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="display-5 text-light">Spotify Song Recommender</h1>
+    <p class="lead text-light">{{para}}</p>
+    <a class="nav-link" href="/about"><button class="btn btn-success btn-lg">Learn More</button></a>
+  </div>
+    <div class="mt-4">
+      <h4>Enter the values for the type of song</h4>
+      <form method="POST" action="{{ url_for('process_form') }}">
+                {% for input_name in inputs %}
+        <div class="form-group"> 
+          <input type="text" class="form-control" id="{{ input_name }}" name="{{ input_name }}" placeholder="Enter {{ input_name }}" required>
+        </div>
+        {% endfor %}
+        {% if not label %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+        {% endif %}
+      </form>
+      {% if label %}
+      <form method="POST" action="{{ url_for('open_track') }}" target="_blank">
+        <button type="submit" class="btn btn-primary">Open A {{ label }} song on Spotify</button>
+      </form>
+      {% endif %}
+    </div>
+  {% if filename %}
+    <h2 class='content_h'>File Uploaded: {{ filename }}</h2>
+    <div class = "img-container">
+    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+    </div>
+    {% endif %}
+  {% if output %}
+    <p class = 'content_p'>Model Output:</p>
+    <p class = 'content_p'>{{ output }}</p>
+  {% endif %}
+  </br>
+{% endblock %}
+

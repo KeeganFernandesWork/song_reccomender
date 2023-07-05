@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Spotify Reccomendation{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="display-5 text-light">About the Song Reccomender</h1>
+    <p class="lead text-light">{{para}}</p>
+    <p>This app provides an interactive platform for music analysis and recommendations.</p>
+    <p>Using xgboost algorithm, it analyzes various audio features of songs to provide insights into their valence, danceability, duration, loudness, and more.</p>
+    <p>With this app, you can explore the emotional and musical characteristics of your favorite songs and discover new tracks based on your preferences.</p>
+    <p>For more information and detailed technical explanations read my GitHub repository and Medium article:</p>
+        <ul class="list-group mt-3">
+            <li class="list-group-item">
+                <a href="https://github.com/your-username/your-repo">GitHub Repository</a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://medium.com/your-article">Medium</a>
+            </li>
+        </ul>
+   </div>
+{% endblock %}
+

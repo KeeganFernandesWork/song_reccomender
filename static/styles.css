@@ -1,0 +1,28 @@
+/* Custom styles */
+body {
+  background-color: #1DB954;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+/* Override Bootstrap styles for text color */
+.text-light {
+  color: #ffffff !important;
+}
+
+    
+        /* Custom CSS for better styling */
+        .about-section {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+        }
+    
+
