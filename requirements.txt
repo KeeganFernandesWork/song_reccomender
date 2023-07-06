@@ -2,3 +2,4 @@ xgboost
 joblib
 flask
 pandas
+scikit-learn
