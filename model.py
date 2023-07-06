@@ -4,7 +4,7 @@ import warnings
 warnings.filterwarnings("ignore")
 loaded_scaler = joblib.load('preprocessor.joblib')
 loaded_model = joblib.load('model.joblib')
-df = pd.read_csv("uri_labels.csv")
+df = pd.read_csv("uri_labels.csv", dtype_backend='pyarrow', engine='pyarrow')
 
 label = {0:"Sad", 1:"Happy", 2:"Energetic", 3:"Calm"}
 
