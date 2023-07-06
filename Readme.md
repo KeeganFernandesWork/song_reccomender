@@ -15,6 +15,7 @@ This repository contains the code for a Flask web application that provides musi
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-
+   ```console
+   git clonehttps://github.com/KeeganFernandesWork/song_reccomender
+```
+2. 
